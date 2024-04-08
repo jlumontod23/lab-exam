@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .survey-container {
+    width: 150%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+  }
+  .survey-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .survey-question {
+    margin-bottom: 10px;
+  }
+  .survey-question label {
+    margin-bottom: 5px;
+    display: block;
+  } 
+  .survey-question input[type="text"],
+  .survey-question select,
+  .survey-question textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .survey-question input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .survey-question input[type="submit"]:hover {
+    background-color: #4cae4c;
+  }
+</style>
+</head>
+<body>
+<div class="survey-container">
+  <div class="survey-title">
+    <h1>Survey Form</h1>
+  </div>
+  <form id="survey-form">
+    <div class="survey-question">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="survey-question">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="survey-question1">
+      <label for="age">Age:</label>
+      <input type="age" id="age" name="age" required>
+    </div>
+    <div class="survey-question">
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" required></textarea>
+    </div>
+    <div class="survey-question">
+      <input type="submit" value="Submit Feedback">
+    </div>
+  </form>
+</div>
+</body>
+</html>
